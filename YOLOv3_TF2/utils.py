@@ -26,7 +26,7 @@ def resize_image(inputs, modelsize): #unuseful funtion, better load tf.image.res
 
 def load_class_names(file_name): #unuseful for us: we only have 1 class (antenna)
     with open(file_name, 'r') as f:
-        class_names ) f.read().splitlines()
+        class_names = f.read().splitlines()
     return class_names
 
 

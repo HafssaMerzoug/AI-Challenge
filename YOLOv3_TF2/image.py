@@ -17,8 +17,8 @@ max_output_size_per_class = 20
 iou_threshold = 0.5
 confidence_threshold = 0.5
 
-cfgfile = 'sfg/yolov3.cfg'
-weightfile = 'weights/yolov3_weights.tf'
+cfgfile = 'cfg/yolov3.cfg'
+weightfile = 'weights/yolov3.weights'
 img_path = "data/images/test.jpg"
 
 
@@ -54,3 +54,6 @@ def main():
 
     #If you want to save the result, uncommnent the line below:
     #cv2.imwrite('test.jpg', img)
+
+if __name__ == "__main__":
+    main()
